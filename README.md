@@ -1,20 +1,25 @@
 # Nmax
-Напишите скрипт nmax, который делает следующее:
-• читает из входящего потока текстовые данные;
-• по завершении ввода выводит n самых больших целых чисел, встретившихся в полученных текстовых данных.
 
-Дополнительные указания:
-• числом считается любая непрерывная последовательность цифр в тексте;
-• известно, что чисел длиннее 1000 цифр во входных данных нет;
-• число n должно быть единственным параметром скрипта;
-• код должен быть покрыт тестами;
-• код должен быть оформлен в виде гема (содержащего исполняемый файл, код модулей и т.д.);
-• плюсом является размещение на Github и интеграция с Travis CI.
+## Requirements
 
-Пример запуска:
+Create the nmax-script which does the following:
+• reads from an incoming stream of text data;
+• on completion of input it outputs n of the most large integers from given data.
+
+Additional information:
+• the number is any continious sequence of digits in the data;
+• there are no numbers longer than 1000 digits in the data;
+• n should be the only parameter of the script;
+• the code should be covered with tests;
+• the code should be made as a gem (with an executable file, code of modules, etc.);
+• placing on Github and integration with Travis CI would be a plus.
+
+The example of launching:
 cat sample_data_40GB.txt | nmax 10000
 
 ## Installation
+
+The gem tested against Ruby 1.9-2.4.0 and JRuby 1.7, 9.1.0.0.
 
 Add this line to your application's Gemfile:
 
@@ -32,7 +37,7 @@ Or install it yourself as:
 
 ## Usage
 
-$ cat filename | nmax count
+    $ cat filename | nmax count
 
 ## Contributing
 
