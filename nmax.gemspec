@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
   spec.version       = Nmax::VERSION
   spec.author        = ['Vasilisa Tyulberova']
   spec.email         = ['vasiliqa@rambler.ru']
-  spec.platform      = Gem::Platform.local
+  spec.platform      = Gem::Platform::RUBY
 
   spec.summary       = 'Ruby gem for finding n maximum integers in file'
   spec.description   = 'Ruby gem for finding n maximum integers in file'
@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files`.split("\n")
   spec.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  spec.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  spec.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   spec.require_paths = ['lib']
   spec.post_install_message = 'Thanks for installing nmax!'
 
