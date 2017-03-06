@@ -11,13 +11,13 @@ describe Nmax do
     end
   end
 
-  context 'when invalid data' do
-    it 'returns nil' do
+  context 'when empty data' do
+    it 'returns empty array' do
       data = File.open('spec/data/empty.txt')
 
       result = Nmax.max_integers(data, 5)
 
-      expect(result).to eq nil
+      expect(result).to eq []
     end
   end
 
